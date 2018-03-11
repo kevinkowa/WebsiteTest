@@ -8,3 +8,9 @@ body {
 .navbar-brand {
 	color: white;
 }
+
+.pre_lesson{
+	display: block;
+	white-space: pre-wrap;
+  	font-size: 15px;
+}
