@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :destroy]
-
+  #This authenticates admin whenever a post is to be created, updated or destroyed.
+  before_action :authenticate_admin!
   # GET /posts
   # GET /posts.json
   def index
@@ -69,6 +70,6 @@ class PostsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
-      params.require(:post).permit(:tittle, :content)
+      params.require(:post).permit(:title, :content, :author)
     end
 end
