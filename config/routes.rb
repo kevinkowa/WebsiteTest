@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root 'static_pages#index'
 
   get "/lessons" => "static_pages#lessons"
+  get "/lessons/:title" => "static_pages#show"
 end

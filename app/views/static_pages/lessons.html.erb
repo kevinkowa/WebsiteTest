@@ -1,4 +1,6 @@
 <div class="starter-template">
   <h1>Lessons</h1>
-  <p class="lead">to be implemented</p>
+  <% @posts.each do |x| %>
+  <a class="lesson-link" href="/lessons/<%= x.title %>"><%= x.title %> by: <%= x.author %></a>
+  <% end %>
 </div>
