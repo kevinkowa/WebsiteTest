@@ -14,7 +14,7 @@ class StaticPagesController < ApplicationController
 		if @title == nil
 			@title = ""
 		end
-		@posts = Post.where("title like ?", "#{@title.downcase}%")
+		@posts = Post.where("lower(title) like ?", "#{@title.downcase}%")
 	end
 
   # GET /lessons
