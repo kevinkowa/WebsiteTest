@@ -197,10 +197,10 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
-  bootstrap-sass (~> 3.3)
+  bootstrap-sass
   byebug
   capybara (~> 2.13)
-  ckeditor (~> 4.1)
+  ckeditor
   coffee-rails (~> 4.2)
   devise
   jbuilder (~> 2.5)
@@ -209,7 +209,7 @@ DEPENDENCIES
   rails (~> 5.1.5)
   sass-rails (~> 5.0)
   selenium-webdriver
-  simple_form (~> 3.2)
+  simple_form
   sqlite3
   turbolinks (~> 5)
   tzinfo-data
