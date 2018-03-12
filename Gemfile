@@ -40,7 +40,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'devise'
-gem 'ckeditor'
+gem "ckeditor", :git => "https://github.com/galetahub/ckeditor.git"
 gem 'simple_form'
 gem 'bootstrap-sass'
 
