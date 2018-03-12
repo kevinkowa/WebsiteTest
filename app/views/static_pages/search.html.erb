@@ -1,0 +1,8 @@
+<div class="starter-template">
+  <h1>Lesson search results for <%=@title%></h1>
+  <% @posts.each do |x| %>
+  <p>
+  	<a class="lesson link" href="/lessons/<%= x.title %>"><%= x.title %> by: <%= x.author %></a>
+  </p>
+  <% end %>
+</div>

@@ -1,7 +1,20 @@
 class StaticPagesController < ApplicationController
 
 	layout 'standard'
+
+	# GET /
 	def index
+	end
+
+	def about
+	end
+	# GET /search?
+	def search
+		@title = params[:search]
+		if @title == nil
+			@title = ""
+		end
+		@posts = Post.where("title like ?", "#{@title}%")
 	end
 
   # GET /lessons

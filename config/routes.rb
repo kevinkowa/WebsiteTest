@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   get "/lessons" => "static_pages#lessons"
   get "/lessons/:title" => "static_pages#show"
+  get "/search" => "static_pages#search"
+  get "/about" => "static_pages#about"
 end
