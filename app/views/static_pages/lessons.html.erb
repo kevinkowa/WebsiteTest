@@ -1,8 +1,8 @@
 <div class="starter-template">
   <h1>Lessons</h1>
-  <% @posts.each do |x| %>
+  <% @posts.each_with_index do |x,i| %>
   <p>
-  	<a class="lesson-link" href="/lessons/<%= x.title %>">1- <%= x.title %> by: <%= x.author %></a>
+  	<a class="lesson-link" href="/lessons/<%= x.title %>"><%= i+1 %>- <%= x.title %> by: <%= x.author %></a>
   </p>
   <% end %>
 </div>
